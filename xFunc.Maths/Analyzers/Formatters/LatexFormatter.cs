@@ -29,16 +29,16 @@ namespace xFunc.Maths.Analyzers.Formatters
 {
 
     /// <summary>
-    /// Converts expressions into string.
+    /// Converts expressions into LaTeX string.
     /// </summary>
     /// <seealso cref="xFunc.Maths.Analyzers.Formatters.BaseFormatter" />
-    public class CommonFormatter : BaseFormatter
+    public class LatexFormatter : BaseFormatter
     {
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CommonFormatter"/> class.
+        /// Initializes a new instance of the <see cref="LatexFormatter"/> class.
         /// </summary>
-        public CommonFormatter() { }
+        public LatexFormatter() { }
 
         #region Standard
 

@@ -43,7 +43,9 @@
     <Compile Include="Analyzers\Analyzer.cs" />
     <Compile Include="Analyzers\Differentiator.cs" />
     <Compile Include="Analyzers\Formatters\CommonFormatter.cs" />
+    <Compile Include="Analyzers\Formatters\BaseFormatter.cs" />
     <Compile Include="Analyzers\Formatters\IFormatter.cs" />
+    <Compile Include="Analyzers\Formatters\LatexFormatter.cs" />
     <Compile Include="Analyzers\IAnalyzer.cs" />
     <Compile Include="Analyzers\Simplifier.cs" />
     <Compile Include="Builder.cs" />
