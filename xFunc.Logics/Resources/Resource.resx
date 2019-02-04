@@ -112,36 +112,36 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorWhileParsingTree" xml:space="preserve">
-    <value>An error occurred while parsing the tree.</value>
+    <value>ツリーの構文解析中にエラーが発生しました。</value>
   </data>
   <data name="InvalidExpression" xml:space="preserve">
-    <value>The expression is invalid.</value>
+    <value>式が無効です。</value>
   </data>
   <data name="InvalidInFirst" xml:space="preserve">
-    <value>No item satisfied the predicate or the source collection was empty.</value>
+    <value>式が不正です。</value>
   </data>
   <data name="InvalidNumberOfVariables" xml:space="preserve">
-    <value>The function has an invalid number of variables.</value>
+    <value>関数に無効な変数があります。</value>
   </data>
   <data name="NotBalanced" xml:space="preserve">
-    <value>Brackets are not balanced.</value>
+    <value>括弧が閉じられていません。</value>
   </data>
   <data name="NotSpecifiedFunction" xml:space="preserve">
-    <value>The function is not specified.</value>
+    <value>関数が定義されていません。</value>
   </data>
   <data name="NotSupportedSymbol" xml:space="preserve">
-    <value>The symbol '{0}' is not supported.</value>
+    <value>'{0}'はサポートされていません。</value>
   </data>
   <data name="NotSupportedToken" xml:space="preserve">
-    <value>The type of token is not supported.</value>
+    <value>サポートされていない型です。</value>
   </data>
   <data name="UnexpectedError" xml:space="preserve">
-    <value>Unexpected error.</value>
+    <value>予期しないエラーです。</value>
   </data>
 </root>
