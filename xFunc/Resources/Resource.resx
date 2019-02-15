@@ -700,10 +700,10 @@
     <value>以上. 例: x &gt;= 10.</value>
   </data>
   <data name="ConditionalAndToolTip" xml:space="preserve">
-    <value>定数</value>
+    <value>条件付きAND演算子. 例: x == 0 &amp;&amp; y != 0.</value>
   </data>
   <data name="ConditionalOrToolTip" xml:space="preserve">
-    <value>条件付きOR演算子. 例: x == 0 || y != 0.</value>
+    <value>条件付きOR演算子. 例: x == 0 || y != 0</value>
   </data>
   <data name="AddAssignToolTip" xml:space="preserve">
     <value>指定された値を加算. 例: x += 2.</value>

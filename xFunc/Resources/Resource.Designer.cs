@@ -493,7 +493,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   定数 に類似しているローカライズされた文字列を検索します。
+        ///   条件付きAND演算子. 例: x == 0 &amp;&amp; y != 0. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ConditionalAndToolTip {
             get {
@@ -502,7 +502,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   条件付きOR演算子. 例: x == 0 || y != 0. に類似しているローカライズされた文字列を検索します。
+        ///   条件付きOR演算子. 例: x == 0 || y != 0 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ConditionalOrToolTip {
             get {
