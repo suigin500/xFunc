@@ -247,10 +247,10 @@
     <value>馬力</value>
   </data>
   <data name="Celsius" xml:space="preserve">
-    <value>セ氏</value>
+    <value>摂氏</value>
   </data>
   <data name="Fahrenheit" xml:space="preserve">
-    <value>カ氏</value>
+    <value>華氏</value>
   </data>
   <data name="Kelvin" xml:space="preserve">
     <value>ケルビン</value>

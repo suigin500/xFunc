@@ -88,7 +88,7 @@ namespace xFunc.UnitConverters.Resources {
         }
         
         /// <summary>
-        ///   セ氏 に類似しているローカライズされた文字列を検索します。
+        ///   摂氏 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Celsius {
             get {
@@ -178,7 +178,7 @@ namespace xFunc.UnitConverters.Resources {
         }
         
         /// <summary>
-        ///   カ氏 に類似しているローカライズされた文字列を検索します。
+        ///   華氏 に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string Fahrenheit {
             get {
