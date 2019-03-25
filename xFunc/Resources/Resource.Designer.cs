@@ -565,7 +565,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   _Converter Type: に類似しているローカライズされた文字列を検索します。
+        ///   変換単位: に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ConverterTypeText {
             get {
@@ -898,7 +898,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   From: に類似しているローカライズされた文字列を検索します。
+        ///   変換元: に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string FromText {
             get {
@@ -1780,7 +1780,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   To: に類似しているローカライズされた文字列を検索します。
+        ///   変換先: に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ToText {
             get {
@@ -1870,7 +1870,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   _Unit: に類似しているローカライズされた文字列を検索します。
+        ///   単位: に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string UnitsText {
             get {
@@ -1879,7 +1879,7 @@ namespace xFunc.Resources {
         }
         
         /// <summary>
-        ///   _Value: に類似しているローカライズされた文字列を検索します。
+        ///   値: に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ValueText {
             get {

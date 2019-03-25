@@ -733,19 +733,19 @@
     <value>単位変換</value>
   </data>
   <data name="ConverterTypeText" xml:space="preserve">
-    <value>_Converter Type:</value>
+    <value>変換単位:</value>
   </data>
   <data name="FromText" xml:space="preserve">
-    <value>From:</value>
+    <value>変換元:</value>
   </data>
   <data name="ToText" xml:space="preserve">
-    <value>To:</value>
+    <value>変換先:</value>
   </data>
   <data name="UnitsText" xml:space="preserve">
-    <value>_Unit:</value>
+    <value>単位:</value>
   </data>
   <data name="ValueText" xml:space="preserve">
-    <value>_Value:</value>
+    <value>値:</value>
   </data>
   <data name="ConverterCalculateText" xml:space="preserve">
     <value>演算</value>
