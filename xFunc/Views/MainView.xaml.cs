@@ -23,6 +23,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml.Linq;
+using System.IO;
 using xFunc.Maths;
 using xFunc.Maths.Expressions;
 using xFunc.Maths.Expressions.Collections;
@@ -80,6 +81,12 @@ namespace xFunc.Views
         private FunctionView functionView;
         private Converter converterView;
 
+        // 時間計測用変数
+        Boolean KeisokuJissichu;
+        DateTime KeisokuStartTime;
+        DateTime KeisokuEndtTime;
+
+
         public MainView()
         {
             InitializeComponent();
@@ -100,6 +107,8 @@ namespace xFunc.Views
             LoadSettings();
 
             SetFocus();
+
+            KeisokuJissichu = false;
         }
 
         private void mathPresenter_PropertyChanged(object o, PropertyChangedEventArgs args)
@@ -831,7 +840,41 @@ namespace xFunc.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string KeisokuData;
+            string FileName;
+            TimeSpan SousaJikan;
 
+            if (KeisokuJissichu)
+            {
+                KeisokuJissichu = false;
+                KeisokuEndtTime = DateTime.Now;
+
+                SousaJikan = KeisokuEndtTime - KeisokuStartTime;
+
+                FileName = Directory.GetCurrentDirectory();
+                FileName += "\\sokuteidata";
+                Directory.CreateDirectory(FileName);
+                FileName += "\\";
+                FileName += KeisokuStartTime.ToString("yyyyMMddHHmmss") + ".txt";
+
+                KeisokuData = "";
+                KeisokuData += "測定開始時間,";
+                KeisokuData += KeisokuStartTime.ToString("HHmmss");
+                KeisokuData += "\n\r";
+                KeisokuData += "測定終了時間,";
+                KeisokuData += KeisokuEndtTime.ToString("HHmmss");
+                KeisokuData += "\n\r";
+                KeisokuData += "操作時間,";
+                KeisokuData += SousaJikan.ToString("mmss");
+                KeisokuData += "\n\r";
+
+                File.WriteAllText(FileName, KeisokuData);
+            }
+            else
+            {
+                KeisokuJissichu = true;
+                KeisokuStartTime = DateTime.Now;
+            }
         }
     }
 
