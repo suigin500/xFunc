@@ -29,7 +29,7 @@ limitations under the License. -->
         <CommandBinding Command="views:MainView.OpenCommand" Executed="OpenCommand_Execute" />
         <CommandBinding Command="views:MainView.SaveCommand" Executed="SaveCommand_Execute" />
         <CommandBinding Command="views:MainView.SaveAsCommand" Executed="SaveAsCommand_Execute" />
-        
+
         <CommandBinding Command="views:MainView.DegreeCommand" Executed="DegreeButton_Execute" CanExecute="AndleButtons_CanExecute" />
         <CommandBinding Command="views:MainView.RadianCommand" Executed="RadianButton_Execute" CanExecute="AndleButtons_CanExecute" />
         <CommandBinding Command="views:MainView.GradianCommand" Executed="GradianButton_Execute" CanExecute="AndleButtons_CanExecute" />
@@ -56,7 +56,7 @@ limitations under the License. -->
         <KeyBinding Command="views:MainView.OpenCommand" Key="O" Modifiers="Control" />
         <KeyBinding Command="views:MainView.SaveCommand" Key="S" Modifiers="Control" />
         <KeyBinding Command="views:MainView.SaveAsCommand" Key="S" Modifiers="Control+Shift" />
-        
+
         <KeyBinding Command="views:MainView.DegreeCommand" Key="D" Modifiers="Control+Alt" />
         <KeyBinding Command="views:MainView.RadianCommand" Key="R" Modifiers="Control+Alt" />
         <KeyBinding Command="views:MainView.GradianCommand" Key="G" Modifiers="Control+Alt" />
@@ -920,5 +920,6 @@ limitations under the License. -->
                 <TextBlock x:Name="updateText" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             </ribbon:StatusBarItem>
         </ribbon:StatusBar>
+        <Button Grid.ColumnSpan="2" Content="測定" HorizontalAlignment="Left" Margin="780,63,0,0" VerticalAlignment="Top" Width="58" Background="#FFFA1C1C" Click="Button_Click" Height="60" FontSize="20"/>
     </Grid>
 </ribbon:MetroWindow>
