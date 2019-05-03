@@ -920,6 +920,6 @@ limitations under the License. -->
                 <TextBlock x:Name="updateText" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             </ribbon:StatusBarItem>
         </ribbon:StatusBar>
-        <Button Grid.ColumnSpan="2" Content="測定" HorizontalAlignment="Left" Margin="780,63,0,0" VerticalAlignment="Top" Width="58" Background="#FFFA1C1C" Click="Button_Click" Height="60" FontSize="20"/>
+        <Button x:Name="sokutei" Grid.ColumnSpan="2" Content="測定" HorizontalAlignment="Left" Margin="780,63,0,0" VerticalAlignment="Top" Width="58" Click="Button_Click" Height="60" FontSize="20" AutomationProperties.Name="sokutei" Background="#FFFA1C1C"/>
     </Grid>
 </ribbon:MetroWindow>

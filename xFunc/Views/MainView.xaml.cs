@@ -24,6 +24,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Xml.Linq;
 using System.IO;
+using System.Windows.Media;
 using xFunc.Maths;
 using xFunc.Maths.Expressions;
 using xFunc.Maths.Expressions.Collections;
@@ -844,10 +845,15 @@ namespace xFunc.Views
             string FileName;
             TimeSpan SousaJikan;
 
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush();
+
             if (KeisokuJissichu)
             {
                 KeisokuJissichu = false;
                 KeisokuEndtTime = DateTime.Now;
+
+                mySolidColorBrush.Color = Color.FromArgb(255, 250, 28, 28);
+                sokutei.Background = mySolidColorBrush;
 
                 SousaJikan = KeisokuEndtTime - KeisokuStartTime;
 
@@ -874,6 +880,9 @@ namespace xFunc.Views
             {
                 KeisokuJissichu = true;
                 KeisokuStartTime = DateTime.Now;
+
+                mySolidColorBrush.Color = Color.FromArgb(255, 28, 28, 250);
+                sokutei.Background = mySolidColorBrush;
             }
         }
     }
