@@ -855,18 +855,18 @@ namespace xFunc.Views
                 FileName += "\\sokuteidata";
                 Directory.CreateDirectory(FileName);
                 FileName += "\\";
-                FileName += KeisokuStartTime.ToString("yyyyMMddHHmmss") + ".txt";
+                FileName += KeisokuStartTime.ToString("yyyyMMddHHmmss") + ".csv";
 
                 KeisokuData = "";
                 KeisokuData += "測定開始時間,";
                 KeisokuData += KeisokuStartTime.ToString("HHmmss");
-                KeisokuData += "\n\r";
+                KeisokuData += "\n";
                 KeisokuData += "測定終了時間,";
                 KeisokuData += KeisokuEndtTime.ToString("HHmmss");
-                KeisokuData += "\n\r";
+                KeisokuData += "\n";
                 KeisokuData += "操作時間,";
-                KeisokuData += SousaJikan.ToString("mmss");
-                KeisokuData += "\n\r";
+                KeisokuData += SousaJikan.TotalSeconds;
+                KeisokuData += "\n";
 
                 File.WriteAllText(FileName, KeisokuData);
             }
